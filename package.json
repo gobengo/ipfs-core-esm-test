@@ -13,7 +13,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "ipfs-core": "^0.14.2",
     "ipfs-utils": "^9.0.5",
     "tslint": "^6.1.3"
   },
