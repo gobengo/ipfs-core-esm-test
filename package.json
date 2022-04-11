@@ -5,7 +5,7 @@
   "description": "",
   "main": "./lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node src/test",
     "build": "tsc",
     "lint": "tslint -c tslint.json src/**/*.ts",
     "prepublish": "npm run build"
@@ -21,5 +21,8 @@
     "./bin/*",
     "./lib/*"
   ],
-  "typings": "./lib/index.d.ts"
+  "typings": "./lib/index.d.ts",
+  "devDependencies": {
+    "@types/node": "^17.0.23"
+  }
 }
