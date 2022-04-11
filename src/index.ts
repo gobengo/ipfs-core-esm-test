@@ -1,5 +1,5 @@
 // this builds
-// import * as IPFS from "ipfs-utils";
+import * as IPFSUtils from "ipfs-utils";
 
 /*
 This errors with:
@@ -9,8 +9,8 @@ node_modules/ipfs-utils/dist/src/files/glob-source.d.ts:10:14 - error TS2503: Ca
 10     content: fs.ReadStream | undefined;
                 ~~
 */
-import * as IPFSUtils from "ipfs-utils";
+import * as IPFSCore from "ipfs-core";
 
 export function sayHelloWorld() {
-  return `Hello ${IPFSUtils}`;
+  return `Hello ${IPFSUtils} ${IPFSCore}`;
 }
