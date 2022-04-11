@@ -1,9 +1,5 @@
-// this builds
-// import * as IPFSUtils from "ipfs-utils";
+// ipfs-core does this import, which is why it looked like an issue there
 import globSourceImport from "ipfs-utils/src/files/glob-source.js";
-import * as fs from "fs";
-import * as path from "path";
-
 /*
 This errors with:
 
@@ -12,7 +8,9 @@ node_modules/ipfs-utils/dist/src/files/glob-source.d.ts:10:14 - error TS2503: Ca
 10     content: fs.ReadStream | undefined;
                 ~~
 */
-import * as IPFSCore from "ipfs-core";
+
+import * as fs from "fs";
+import * as path from "path";
 
 export function sayHelloWorld() {
   return `Hello`;
