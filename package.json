@@ -5,7 +5,7 @@
   "description": "",
   "main": "./lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node src/test",
     "build": "tsc",
     "lint": "tslint -c tslint.json src/**/*.ts",
     "prepublish": "npm run build"
@@ -13,7 +13,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "ipfs-core": "^0.14.2",
     "ipfs-utils": "^9.0.5",
     "tslint": "^6.1.3",
     "typescript": "^4.6.3"
@@ -22,5 +21,8 @@
     "./bin/*",
     "./lib/*"
   ],
-  "typings": "./lib/index.d.ts"
+  "typings": "./lib/index.d.ts",
+  "devDependencies": {
+    "@types/node": "^17.0.23"
+  }
 }

@@ -9,8 +9,8 @@ node_modules/ipfs-utils/dist/src/files/glob-source.d.ts:10:14 - error TS2503: Ca
 10     content: fs.ReadStream | undefined;
                 ~~
 */
-import * as IPFS from "ipfs-core";
+import * as IPFSUtils from "ipfs-utils";
 
 export function sayHelloWorld() {
-  return `Hello ${IPFS}`;
+  return `Hello ${IPFSUtils}`;
 }
