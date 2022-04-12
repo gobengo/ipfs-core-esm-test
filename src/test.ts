@@ -4,3 +4,9 @@ import * as assert from "assert";
 
 assert.ok(IPFSUtils);
 // assert.ok(IPFSCore);
+
+import { iterateGlob } from "./index.js";
+
+(async () => {
+  await iterateGlob();
+})();
